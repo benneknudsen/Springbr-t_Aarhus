@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+/* Min progress bar */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: white;
+}
+
+/* progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #66ff66;
+  width: 0%;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4,
+.bgimg-5,
+.bgimg-6{
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bgimg-1 {
+    background-image: url(Billeder/jaja.jpeg);
+    min-height: 100%;
+    
+    
+}
+
+.bgimg-2 {
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-color: white;
+    min-height: 400px;
+}
+
+.bgimg-4 {
+    min-height: 400px;
+}
+
+.bgimg-5 {
+    min-height: 400px;
+}
+
+.bgimg-6 {
+    min-height: 400px;
+}
+
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.hancock {
+    width: 100%;
+   vertical-align: right;
+    height: 31%;
+    padding-left: 70px;
+
+
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+.image {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    opacity: 1;
+    animation: fadeIn 5s ease;
+    
+
+
+}
+
+.tekst {
+    display: inline-block;
+    width: 1100px;
+    word-wrap: break-word;
+    vertical-align: left;
+    clear: left;
+    
+}
+
+.afsnit {
+    color: #777;
+    background-color: white;
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify;
+    
+
+}
+
+.para {
+    text-align: center;
+    font-size: 19px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+bodymus {
+    margin: 0;
+    padding: 0;
+    background: #e74c3c;
+}
+
+.middle {
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mouse {
+    width: 100px;
+    height: 180px;
+    border: 4px solid #333;
+    border-radius: 60px;
+}
+
+.mouse::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 30px;
+    background: #333;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    opacity: 1;
+    animation: mouse 2s infinite;
+}
+
+@keyframes mouse {
+    from {
+        opacity: 1;
+        top: 30px;
+    }
+
+    to {
+        opacity: 0;
+        top: 150px;
+    }
+}
+
+.video {
+    position: relative;
+    height: 100vh;
+    
+}
+
+#myVideo {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    
+}
+
+#myVideo2 {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: -5;
+}
+
+#myVideo1 {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: -5;
+}
+
+#myVideo3 {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: -5;
+}
+
+#myVideo4 {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: -5;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+
+
+.hideme
+{
+    opacity:0;
+}
+
+@media only screen and (max-device-width: 1024px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4,
+    .bgimg-5,
+    .bgimg-6{
+        background-attachment: scroll;
+    }
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow containeren */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Skjuler billeder */
+.mySlides {
+  display: none;
+}
+
+/* Pile*/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+ 
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* tekst til slideshow */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Nummer tekst (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
